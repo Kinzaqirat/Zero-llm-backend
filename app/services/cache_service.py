@@ -3,8 +3,7 @@
 import json
 import logging
 from typing import Any, Optional
-
-import redis.asyncio as redis
+import asyncio as redis
 
 from app.config import settings
 
