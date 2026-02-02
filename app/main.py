@@ -41,7 +41,7 @@ async def sse_endpoint(request: Request):
         # Shuru mein connection establish karne ke liye ek 'endpoint' event bhejna zaroori hai
         yield {
             "event": "endpoint",
-            "data": f"{settings.BASE_URL}/mcp" # Aapka MCP post endpoint
+            "data": f"https://zero-llm-backend.onrender.com/mcp" # Aapka MCP post endpoint
         }
         
         while True:
